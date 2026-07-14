@@ -1,0 +1,6 @@
+{
+  "name": "NBti 思想家系列漫步之路",
+  "description": "沉浸式雨后秋林思维匹配。漫步落叶与林口，选择专属路标，探寻你的哲思原型模型。",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
