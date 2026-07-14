@@ -6,6 +6,7 @@
 import React, { useState } from "react";
 import { motion, AnimatePresence } from "motion/react";
 import { Compass, Sparkles, HelpCircle, ArrowRight, ShieldCheck, Droplets } from "lucide-react";
+import coverImage from "../../assets/封面.png";
 
 interface ActOneEntranceProps {
   onStart: () => void;
@@ -47,7 +48,7 @@ export default function ActOneEntrance({ onStart }: ActOneEntranceProps) {
       <motion.div
         className="absolute inset-0 z-0 bg-cover bg-center origin-center"
         style={{
-          backgroundImage: `url('https://images.unsplash.com/photo-1473448912268-2022ce9509d8?auto=format&fit=crop&w=1920&q=80')`,
+          backgroundImage: `url(${coverImage})`,
         }}
         animate={{
           scale: isLeaving ? 1.25 : 1.03,

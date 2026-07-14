@@ -10,6 +10,7 @@ import { calculateThinkerProfile } from "../types";
 import ActOneEntrance from "./ActOneEntrance";
 import ActTwoQuizFork from "./ActTwoQuizFork";
 import ActThreeReportLake from "./ActThreeReportLake";
+import backgroundImage from "../../assets/背景.png";
 
 type JourneyStage = "entrance" | "quiz" | "transition" | "report";
 
@@ -114,7 +115,7 @@ export default function JourneyShell() {
             <motion.div
               className="absolute inset-0 bg-cover bg-center origin-center filter brightness-65"
               style={{
-                backgroundImage: `url('https://images.unsplash.com/photo-1473448912268-2022ce9509d8?auto=format&fit=crop&w=1920&q=80')`,
+                backgroundImage: `url(${backgroundImage})`,
               }}
               initial={{ scale: 1.0, filter: "blur(2px) brightness(0.5)" }}
               animate={{
